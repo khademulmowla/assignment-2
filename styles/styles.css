@@ -19,6 +19,25 @@ body {
 .container {
     width: 90%;
     margin: 0px auto;
+    margin-bottom: 6.25rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+.section-description {
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.habits-title {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 /* header section  */
@@ -174,4 +193,60 @@ body {
     color: rgba(239, 237, 232, 0.65);
     font-size: 1rem;
     font-weight: 400;
+}
+
+/* change your habit styles start  */
+.change-your-habit {
+    border: 1px solid white;
+}
+
+.habit-content {
+    border: 1px solid white;
+    margin: 0px auto;
+    width: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.habit-content h3 {
+    margin-bottom: 1rem;
+}
+
+.habit-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3.5rem;
+    margin-left: 3rem;
+}
+
+.habit-card-img {
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    width: 240px;
+    height: 180px;
+}
+
+.habit-card-img img {
+    height: 100%;
+    width: 70%;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.habit-description {
+    border: 1px solid white;
+    width: 231px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    margin-top: .8rem;
+}
+
+.habit-description h6 {
+    margin: 5px 0;
 }
