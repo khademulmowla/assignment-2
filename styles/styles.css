@@ -573,3 +573,215 @@ hr {
     text-align: center;
     padding: 2rem;
 }
+
+/*  ........................................... responsive ............................................. */
+@media screen and (max-width:576px) {
+
+    .header,
+    .change-your-habit,
+    .extra-mile-section,
+    .bmi-container,
+    .meet-team {
+        margin-bottom: 1.5rem;
+    }
+
+    /* ...................... banner .......................  */
+
+    .nav-option,
+    .nav-container {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .get-body-info {
+        margin-left: 1rem;
+        justify-content: center;
+        text-align: left;
+        width: 400px;
+
+    }
+
+    .get-body-info h1 {
+        font-size: 3rem;
+    }
+
+    .img-box-1 {
+        bottom: 30%;
+        right: 50%;
+    }
+
+    .img-box-2 {
+        left: 55%;
+        width: 180px;
+    }
+
+    /* ............................. habit ......................... */
+
+    .basic-content {
+        width: 380px;
+        justify-content: flex-start;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: .8rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+
+    .habit-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .habit-card {
+        width: 270px;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .habit-card-img {
+        width: 260px;
+        height: 190px;
+    }
+
+    .habit-card-img img {
+        margin-right: 1.5rem;
+    }
+
+    .habit-description {
+        text-align: center;
+    }
+
+    /* .......................... extra-mile style ........................  */
+    .extra-mile-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 850px;
+    }
+
+    .text-content {
+        width: 350px;
+    }
+
+    .extra-mile-image {
+        height: 330px;
+        width: 350px;
+        margin-top: 0;
+    }
+
+    .extra-mile-image img {
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+
+    .btn-join-now {
+        width: 350px;
+    }
+
+    /* .................... bmi ...................... */
+    .bmi-content-info {
+        width: 380px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .bmi-content-info p {
+        text-align: left;
+    }
+
+    .bmi-calculator {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .bmi-cal-chart,
+    .cal-your-bmi {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .cal-your-bmi p {
+        margin-left: 0;
+        width: 380px;
+        text-align: left;
+    }
+
+    .cal-your-bmi h4 {
+        margin-left: 0;
+    }
+
+    .h4title {
+        margin: 1rem 0 .5rem 0;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    .row-1,
+    .row-2,
+    .row-3 {
+        margin-left: 0;
+        text-align: start;
+    }
+
+    input {
+        margin-left: 0;
+        width: 100px;
+        height: 35px;
+        padding: .5rem;
+    }
+
+    select {
+        height: 50px;
+        padding: .5rem;
+        margin-left: 0;
+    }
+
+    .bmi-btn {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    /* ................... meet the team .................... */
+
+    .meet-p {
+        width: 380px;
+    }
+
+    .team-members {
+        grid-template-columns: 1fr;
+    }
+
+    /*.................. footer .................. */
+
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .fitness-content p {
+        text-align: left;
+    }
+
+    .get-started {
+        width: 300px;
+        align-items: flex-start;
+    }
+
+    .copy-right {
+        text-align: left;
+        padding: 1rem 0;
+    }
+}
+
+/* ................................................. The End ........................................... */
