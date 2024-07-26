@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
 
-.parisienne-regular {
-    font-family: "Parisienne";
+
+.miama-regular {
+    font-family: 'Miama', sans-serif;
 }
 
 body {
@@ -38,6 +39,7 @@ body {
     font-size: .9rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
+    /* line-height: rem; */
 }
 
 .basic-title {
@@ -120,12 +122,12 @@ body {
 }
 
 .get-body-info {
-    height: 440px;
     width: 520px;
 }
 
 .get-body-info h1 {
-    font-size: 3.8rem;
+    font-size: 5rem;
+    line-height: 5rem;
     font-weight: 900;
     color: rgb(255, 255, 255);
 }
@@ -134,6 +136,7 @@ body {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     margin: 1.6rem 0;
+    line-height: 1.5rem;
 }
 
 .get-body-image {
@@ -175,6 +178,14 @@ body {
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%;
+    position: relative;
+}
+
+.fa-play {
+    position: absolute;
+    bottom: 25%;
+    left: 35%;
+
 }
 
 .box-1-info {
@@ -215,6 +226,10 @@ body {
     align-items: center;
 }
 
+.basic-content p {
+    line-height: 1.5rem;
+}
+
 .habit-content h3 {
     margin-bottom: 1rem;
 }
@@ -247,6 +262,10 @@ body {
     align-items: center;
     align-items: center;
     margin-top: .8rem;
+}
+
+.habit-description p {
+    text-align: center;
 }
 
 .habit-description h6 {
@@ -282,7 +301,7 @@ body {
 
 .text-content p {
     text-align: left;
-    line-height: 30px;
+    line-height: 1.8rem;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -309,6 +328,10 @@ body {
     text-align: left;
 }
 
+.bmi-content-info p {
+    line-height: 1.5rem;
+}
+
 .bmi-content-info h3 {
     margin-bottom: .8rem;
 }
@@ -326,12 +349,12 @@ body {
 }
 
 .bmi-calculator {
-
-    height: 390px;
+    /* height: 420px; */
     display: flex;
     justify-content: space-between;
     gap: 2rem;
     margin-top: 5rem;
+    padding: 2rem 0rem;
 }
 
 .bmi-cal-chart {
@@ -374,6 +397,7 @@ table {
 .cal-your-bmi p {
     width: 450px;
     margin-left: 38px;
+    line-height: 1.5rem;
 }
 
 input {
@@ -386,6 +410,10 @@ input {
     font-size: 16px;
     background: rgba(255, 255, 255, 0.1);
 
+}
+
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 select {
@@ -532,6 +560,10 @@ footer {
     padding: 3rem;
 }
 
+.fitness-content p {
+    line-height: 1.5rem;
+}
+
 .gym-moto h1 {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
@@ -562,7 +594,7 @@ footer {
     align-items: flex-start;
 }
 
-hr {
+footer>hr {
     color: rgba(255, 255, 255, 0.5);
 
 }
@@ -572,6 +604,17 @@ hr {
     font-weight: 300;
     text-align: center;
     padding: 2rem;
+}
+
+hr {
+    border: 1px solid grey;
+    background-color: grey;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.ham-burger {
+    display: none;
 }
 
 /*  ........................................... responsive ............................................. */
@@ -586,10 +629,20 @@ hr {
     }
 
     /* ...................... banner .......................  */
+    .navbar-container {
+        margin-bottom: 2rem;
+    }
 
-    .nav-option,
-    .nav-container {
+    .nav-option {
         display: none;
+    }
+
+    .ham-burger {
+        display: block;
+    }
+
+    .ham-burger i {
+        font-size: 1.5rem;
     }
 
     .banner {
@@ -601,11 +654,16 @@ hr {
         justify-content: center;
         text-align: left;
         width: 400px;
-
     }
 
     .get-body-info h1 {
-        font-size: 3rem;
+        width: 200px;
+        font-size: 2rem;
+        line-height: normal;
+    }
+
+    .get-body-info p {
+        width: 300px;
     }
 
     .img-box-1 {
@@ -640,12 +698,14 @@ hr {
     }
 
     .habit-card {
+        margin-left: 3rem;
+        border: 1px solid white;
         width: 270px;
         margin-bottom: 1rem;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
 
     .habit-card-img {
@@ -653,9 +713,10 @@ hr {
         height: 190px;
     }
 
+    /* 
     .habit-card-img img {
         margin-right: 1.5rem;
-    }
+    } */
 
     .habit-description {
         text-align: center;
@@ -690,10 +751,13 @@ hr {
 
     /* .................... bmi ...................... */
     .bmi-content-info {
+        border: 1px solid white;
         width: 380px;
-        flex-direction: column;
+        margin-left: 2rem;
+        margin-bottom: 0;
+        /* flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: flex-start; */
     }
 
     .bmi-content-info p {
@@ -701,6 +765,7 @@ hr {
     }
 
     .bmi-calculator {
+        margin-top: 1rem;
         height: auto;
         flex-direction: column;
     }
