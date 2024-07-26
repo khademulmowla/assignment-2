@@ -698,7 +698,6 @@ hr {
     }
 
     .habit-card {
-        border: 1px solid white;
         width: 270px;
         margin-bottom: 1rem;
         display: flex;
@@ -725,6 +724,7 @@ hr {
     }
 
     .text-content {
+        padding: 1rem;
         width: 350px;
     }
 
