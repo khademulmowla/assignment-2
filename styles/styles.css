@@ -698,7 +698,6 @@ hr {
     }
 
     .habit-card {
-        margin-left: 3rem;
         border: 1px solid white;
         width: 270px;
         margin-bottom: 1rem;
@@ -712,11 +711,6 @@ hr {
         width: 260px;
         height: 190px;
     }
-
-    /* 
-    .habit-card-img img {
-        margin-right: 1.5rem;
-    } */
 
     .habit-description {
         text-align: center;
@@ -751,13 +745,9 @@ hr {
 
     /* .................... bmi ...................... */
     .bmi-content-info {
-        border: 1px solid white;
         width: 380px;
         margin-left: 2rem;
         margin-bottom: 0;
-        /* flex-direction: column;
-        justify-content: center;
-        align-items: flex-start; */
     }
 
     .bmi-content-info p {
