@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 1060px;
     margin: 0px auto;
 
 }
@@ -100,7 +100,7 @@ body {
     border: none;
     border-radius: 3rem;
     font-weight: 600;
-    width: 224px;
+    width: 160px;
     gap: 8px;
 }
 
@@ -110,7 +110,7 @@ body {
     padding: .8rem 1.8rem;
     border-radius: 3rem;
     font-weight: 600;
-    width: 224px;
+    width: 160px;
     border: 1px solid rgb(255, 255, 255);
 
 }
@@ -124,7 +124,6 @@ body {
 }
 
 .get-body-info {
-    border: 1px solid white;
     width: 520px;
 }
 
@@ -140,11 +139,6 @@ body {
     font-size: 1rem;
     margin: 1.6rem 0;
     line-height: 1.5rem;
-}
-
-.button-banner {
-    display: flex;
-    justify-content: space-between;
 }
 
 .get-body-image {
@@ -243,10 +237,22 @@ body {
 }
 
 .habit-cards {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 3.5rem;
-    margin-left: 5rem;
+}
+
+.habit-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .habit-card-img {
@@ -257,6 +263,7 @@ body {
 }
 
 .habit-card-img img {
+    border: 4px solid rgb(37, 35, 35);
     height: 100%;
     width: 70%;
     border-radius: 50%;
@@ -264,16 +271,12 @@ body {
 
 .habit-description {
     width: 231px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-items: center;
     margin-top: .8rem;
 }
 
 .habit-description p {
     text-align: center;
+    line-height: 1.2rem;
 }
 
 .habit-description h6 {
@@ -283,12 +286,12 @@ body {
 /*  ............................ run extra mile style starts ...........................  */
 
 .extra-mile-section {
-    height: 400px;
     border-radius: .8rem;
     background: rgb(34, 34, 34);
     display: flex;
     justify-content: space-around;
     gap: 3rem;
+    padding: 0 2rem;
     margin-bottom: 6rem;
 }
 
@@ -317,15 +320,20 @@ body {
 .extra-mile-image {
     background-image: url("../images/run.jpg");
     background-position: 68% 30%;
-    height: 350px;
     width: 370px;
-    margin-top: 1.6rem;
+    margin: 2rem 0;
+    /* padding: 1rem 0; */
     border-radius: .8rem;
+}
+
+.btn-join-now {
+    margin-bottom: 1rem;
 }
 
 /* .................................. BMI Calculator styles starts .................................  */
 .bmi-container {
     margin-bottom: 6rem;
+    background: rgb(34, 34, 34);
 }
 
 .bmi-content-info {
@@ -352,12 +360,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.content-container {
-    background: rgb(34, 34, 34);
-}
-
 .bmi-calculator {
-    /* height: 420px; */
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -366,7 +369,6 @@ body {
 }
 
 .bmi-cal-chart {
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -410,6 +412,7 @@ table {
 
 input {
     height: 50px;
+    width: 250px;
     padding: 0 0.5rem;
     margin: 0 1rem;
     border-radius: 8px;
@@ -466,6 +469,7 @@ select {
 
 .meet-p {
     width: 570px;
+    text-align: center;
 }
 
 .team-members {
@@ -617,7 +621,7 @@ footer>hr {
 hr {
     border: 1px solid grey;
     background-color: grey;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-top: 1rem;
 }
 
@@ -627,6 +631,9 @@ hr {
 
 /*  ........................................... responsive ............................................. */
 @media screen and (max-width:576px) {
+    .container {
+        max-width: 576px;
+    }
 
     .header,
     .change-your-habit,
@@ -640,6 +647,9 @@ hr {
 
     .navbar-container {
         margin-bottom: 2rem;
+        justify-content: space-between;
+        margin: 0rem 5rem 1rem 3rem;
+        padding: 2rem 3rem;
     }
 
     .nav-option {
@@ -666,41 +676,74 @@ hr {
 
     .get-body-info h1 {
         width: 300px;
-        font-size: 3rem;
-        margin-left: .5rem;
+        font-size: 2.7rem;
+        margin-left: 1rem;
         line-height: normal;
     }
 
     .get-body-info p {
-        margin-left: .5rem;
+        margin-left: 1rem;
         width: 300px;
     }
 
-    .btn-primary,
-    .btn-secondary {
-        margin: 0rem .5rem;
-        width: 170px;
+    .get-body-image img {
+        width: 300px;
     }
 
+
     .img-box-1 {
+        width: 150px;
         bottom: 30%;
         right: 50%;
     }
 
     .img-box-2 {
         left: 55%;
-        width: 180px;
+        width: 150px;
     }
+
+    .solid-circle {
+        background-color: rgb(230, 83, 60);
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .box-1-info h6 {
+        color: rgb(250, 250, 249);
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .box-2-info h6 {
+        color: rgb(250, 250, 249);
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .box-1-info p,
+    .box-2-info p {
+        color: rgba(239, 237, 232, 0.65);
+        font-size: .8rem;
+        font-weight: 400;
+    }
+
+    .btn-primary {
+        margin: 0 1rem;
+    }
+
 
     /* ............................. habit ......................... */
 
     .basic-content {
-        width: 380px;
-        justify-content: flex-start;
+        width: 280px;
+        justify-content: center;
+        margin: auto;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .section-description {
@@ -710,12 +753,16 @@ hr {
     }
 
     .habit-cards {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .habit-card {
         width: 270px;
         margin-bottom: 1rem;
+        margin-left: 0;
+        margin-right: 3rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -736,42 +783,39 @@ hr {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 850px;
+        padding: 0;
     }
 
     .text-content {
-        border: 1px solid white;
-        /* justify-content: center;
-        align-items: center; */
-        /* padding: 2rem; */
-        width: 350px;
+        width: 280px;
+        padding: 0;
     }
 
     .extra-mile-image {
-        border: 1px solid white;
-        height: 330px;
-        width: 350px;
+        height: 300px;
+        width: 280px;
         margin-top: 0;
-    }
-
-    .extra-mile-image img {
-        /* padding: 1rem; */
-        /* margin-left: 1rem; */
+        margin-bottom: 1rem;
     }
 
     .btn-join-now {
-        width: 350px;
+        width: 280px;
+        margin-left: 0;
+
     }
 
     /* .................... bmi ...................... */
+
     .bmi-content-info {
-        width: 380px;
-        margin-left: 2rem;
+        width: 280px;
+        margin: 2rem auto;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 0;
     }
 
     .bmi-content-info p {
-        text-align: left;
+        text-align: center;
     }
 
     .bmi-calculator {
@@ -782,14 +826,14 @@ hr {
 
     .bmi-cal-chart,
     .cal-your-bmi {
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
 
     .cal-your-bmi p {
         margin-left: 0;
-        width: 380px;
-        text-align: left;
+        width: 280px;
+        text-align: center;
     }
 
     .cal-your-bmi h4 {
@@ -830,32 +874,63 @@ hr {
     /* ................... meet the team .................... */
 
     .meet-p {
-        width: 380px;
+        width: 280px;
     }
 
     .team-members {
         grid-template-columns: 1fr;
+        justify-items: center;
     }
+
+    .member {
+        width: 300px;
+    }
+
+
 
     /*.................. footer .................. */
 
     .footer {
         grid-template-columns: 1fr;
+        justify-items: center;
         padding: 0;
+        margin-left: 0;
+    }
+
+    .fitness-content {
+        width: 300px;
+        text-align: left;
+
     }
 
     .fitness-content p {
         text-align: left;
+        width: 300px;
     }
 
     .get-started {
-        width: 300px;
+        justify-content: flex-start;
         align-items: flex-start;
+        width: 300px;
+        /* align-items: flex-start; */
+    }
+
+    .horizontal-end {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    hr {
+        width: 300px;
+        margin: 1.5rem 0;
     }
 
     .copy-right {
         text-align: left;
         padding: 1rem 0;
+        width: 300px;
     }
 }
 
