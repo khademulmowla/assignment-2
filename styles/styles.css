@@ -97,9 +97,10 @@ body {
     color: rgb(255, 255, 255);
     background-color: rgb(230, 83, 60);
     padding: .8rem 1.8rem;
+    border: none;
     border-radius: 3rem;
     font-weight: 600;
-    width: 170px;
+    width: 224px;
     gap: 8px;
 }
 
@@ -109,6 +110,7 @@ body {
     padding: .8rem 1.8rem;
     border-radius: 3rem;
     font-weight: 600;
+    width: 224px;
     border: 1px solid rgb(255, 255, 255);
 
 }
@@ -122,6 +124,7 @@ body {
 }
 
 .get-body-info {
+    border: 1px solid white;
     width: 520px;
 }
 
@@ -137,6 +140,11 @@ body {
     font-size: 1rem;
     margin: 1.6rem 0;
     line-height: 1.5rem;
+}
+
+.button-banner {
+    display: flex;
+    justify-content: space-between;
 }
 
 .get-body-image {
@@ -629,6 +637,7 @@ hr {
     }
 
     /* ...................... banner .......................  */
+
     .navbar-container {
         margin-bottom: 2rem;
     }
@@ -650,20 +659,27 @@ hr {
     }
 
     .get-body-info {
-        margin-left: 1rem;
         justify-content: center;
         text-align: left;
         width: 400px;
     }
 
     .get-body-info h1 {
-        width: 200px;
-        font-size: 2rem;
+        width: 300px;
+        font-size: 3rem;
+        margin-left: .5rem;
         line-height: normal;
     }
 
     .get-body-info p {
+        margin-left: .5rem;
         width: 300px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        margin: 0rem .5rem;
+        width: 170px;
     }
 
     .img-box-1 {
@@ -724,19 +740,23 @@ hr {
     }
 
     .text-content {
-        padding: 1rem;
+        border: 1px solid white;
+        /* justify-content: center;
+        align-items: center; */
+        /* padding: 2rem; */
         width: 350px;
     }
 
     .extra-mile-image {
+        border: 1px solid white;
         height: 330px;
         width: 350px;
         margin-top: 0;
     }
 
     .extra-mile-image img {
-        padding: 1rem;
-        margin-left: 1rem;
+        /* padding: 1rem; */
+        /* margin-left: 1rem; */
     }
 
     .btn-join-now {
