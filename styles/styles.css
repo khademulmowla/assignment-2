@@ -559,9 +559,8 @@ select {
 }
 
 /*  ................................... footer section ..................................  */
-
-footer {
-    background: rgba(255, 255, 255, 0.1);
+.footer-section {
+    background: rgb(34, 34, 34);
     margin-bottom: 0;
 }
 
@@ -632,7 +631,7 @@ hr {
 /*  ........................................... responsive ............................................. */
 @media screen and (max-width:576px) {
     .container {
-        max-width: 576px;
+        width: 100%;
     }
 
     .header,
