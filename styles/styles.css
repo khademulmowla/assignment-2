@@ -6,13 +6,12 @@
     font-family: 'Miama', sans-serif;
 }
 
+/* .................... shared styles ................... */
 body {
     background: rgb(0, 0, 0);
     font-family: "Inter", sans-serif;
-
 }
 
-/* .................... shared styles ................... */
 * {
     margin: 0;
 }
@@ -20,12 +19,10 @@ body {
 .container {
     width: 1060px;
     margin: 0px auto;
-
 }
 
 .margin-bottom {
     margin-bottom: 6rem;
-
 }
 
 .section-title {
@@ -39,7 +36,6 @@ body {
     font-size: .9rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
-    /* line-height: rem; */
 }
 
 .basic-title {
@@ -93,6 +89,14 @@ body {
     font-weight: 600;
 }
 
+.ham-burger {
+    display: none;
+}
+
+.ham-burger i {
+    color: #ffffff;
+}
+
 .btn-primary {
     color: rgb(255, 255, 255);
     background-color: rgb(230, 83, 60);
@@ -101,7 +105,7 @@ body {
     border-radius: 3rem;
     font-weight: 600;
     width: 160px;
-    gap: 8px;
+    margin-right: .5rem;
 }
 
 .btn-secondary {
@@ -112,10 +116,9 @@ body {
     font-weight: 600;
     width: 160px;
     border: 1px solid rgb(255, 255, 255);
-
 }
 
-/* ...................... banner styles ......................  */
+/* ...................... banner section styles ......................  */
 
 .banner {
     display: flex;
@@ -185,9 +188,9 @@ body {
 
 .fa-play {
     position: absolute;
-    bottom: 25%;
-    left: 35%;
-
+    color: #ffffff;
+    bottom: 27%;
+    left: 38%;
 }
 
 .box-1-info {
@@ -213,7 +216,7 @@ body {
     font-weight: 400;
 }
 
-/* ....................... change your habit styles start .........................  */
+/* ....................... change your habit styles .........................  */
 
 .change-your-habit {
     margin-bottom: 6rem;
@@ -237,10 +240,6 @@ body {
 }
 
 .habit-cards {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    align-items: center; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -283,7 +282,7 @@ body {
     margin: 5px 0;
 }
 
-/*  ............................ run extra mile style starts ...........................  */
+/*  ............................ run extra mile styles ...........................  */
 
 .extra-mile-section {
     border-radius: .8rem;
@@ -322,7 +321,6 @@ body {
     background-position: 68% 30%;
     width: 370px;
     margin: 2rem 0;
-    /* padding: 1rem 0; */
     border-radius: .8rem;
 }
 
@@ -330,7 +328,8 @@ body {
     margin-bottom: 1rem;
 }
 
-/* .................................. BMI Calculator styles starts .................................  */
+/* .................................. BMI Calculator styles .................................  */
+
 .bmi-container {
     margin-bottom: 6rem;
     background: rgb(34, 34, 34);
@@ -420,7 +419,6 @@ input {
     cursor: pointer;
     font-size: 16px;
     background: rgba(255, 255, 255, 0.1);
-
 }
 
 .input-field::placeholder {
@@ -448,13 +446,12 @@ select {
 .row-3 {
     display: grid;
     grid-template-columns: 1fr;
-    margin-left: 0;
 }
 
 .row-1,
 .row-2,
 .row-3 {
-    margin: 20px;
+    margin: 20px 0px 20px 20px;
 }
 
 .bmi-btn {
@@ -480,6 +477,7 @@ select {
     gap: 1rem;
     margin-top: 2.8rem;
     padding: 1rem;
+    justify-items: center;
 }
 
 .team-member1 {
@@ -558,7 +556,7 @@ select {
     color: rgba(255, 255, 255, 0.5);
 }
 
-/*  ................................... footer section ..................................  */
+/*  ................................... footer section styles ..................................  */
 .footer-section {
     background: rgb(34, 34, 34);
     margin-bottom: 0;
@@ -620,15 +618,13 @@ footer>hr {
 hr {
     border: 1px solid grey;
     background-color: grey;
-    /* margin: 0 auto; */
+    width: 1060px;
+    margin: 0 auto;
     margin-top: 1rem;
 }
 
-.ham-burger {
-    display: none;
-}
+/*  ........................................... responsive  for mobile ............................................. */
 
-/*  ........................................... responsive ............................................. */
 @media screen and (max-width:576px) {
     .container {
         width: 100%;
@@ -647,7 +643,7 @@ hr {
     .navbar-container {
         margin-bottom: 2rem;
         justify-content: space-between;
-        margin: 0rem 5rem 1rem 3rem;
+        margin: 0 auto;
         padding: 2rem 3rem;
     }
 
@@ -671,6 +667,7 @@ hr {
         justify-content: center;
         text-align: left;
         width: 400px;
+        margin-bottom: 3rem;
     }
 
     .get-body-info h1 {
@@ -692,53 +689,46 @@ hr {
 
     .img-box-1 {
         width: 150px;
-        bottom: 30%;
+        height: 70px;
+        bottom: 45%;
         right: 50%;
     }
 
     .img-box-2 {
+        top: 10%;
         left: 55%;
         width: 150px;
+        height: 70px;
     }
 
     .solid-circle {
-        background-color: rgb(230, 83, 60);
         height: 2rem;
         width: 2rem;
-        border-radius: 50%;
-        position: relative;
     }
 
     .box-1-info h6 {
-        color: rgb(250, 250, 249);
         font-size: 1rem;
-        font-weight: 700;
     }
 
     .box-2-info h6 {
-        color: rgb(250, 250, 249);
         font-size: 1rem;
-        font-weight: 700;
     }
 
     .box-1-info p,
     .box-2-info p {
-        color: rgba(239, 237, 232, 0.65);
         font-size: .8rem;
-        font-weight: 400;
     }
 
     .btn-primary {
         margin: 0 1rem;
     }
 
-
-    /* ............................. habit ......................... */
+    /* ............................. habit styles ......................... */
 
     .basic-content {
-        width: 280px;
+        width: 300px;
         justify-content: center;
-        margin: auto;
+        margin-bottom: 1rem;
     }
 
     .section-title {
@@ -752,6 +742,8 @@ hr {
     }
 
     .habit-cards {
+        margin: 0 auto;
+        width: 350px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -760,8 +752,6 @@ hr {
     .habit-card {
         width: 270px;
         margin-bottom: 1rem;
-        margin-left: 0;
-        margin-right: 3rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -777,30 +767,31 @@ hr {
         text-align: center;
     }
 
-    /* .......................... extra-mile style ........................  */
+    /* .......................... extra-mile styles ........................  */
     .extra-mile-section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0;
+        width: 400px;
     }
 
     .text-content {
+        margin-top: 1rem;
         width: 280px;
         padding: 0;
     }
 
     .extra-mile-image {
         height: 300px;
-        width: 280px;
+        width: 350px;
         margin-top: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .btn-join-now {
         width: 280px;
         margin-left: 0;
-
     }
 
     /* .................... bmi ...................... */
@@ -825,6 +816,8 @@ hr {
 
     .bmi-cal-chart,
     .cal-your-bmi {
+        margin: 0 auto;
+        width: 400px;
         justify-content: center;
         align-items: center;
     }
@@ -845,11 +838,10 @@ hr {
         font-weight: 700;
     }
 
-    .row-1,
-    .row-2,
-    .row-3 {
-        margin-left: 0;
-        text-align: start;
+    .input-fields {
+        justify-items: center;
+        align-items: center;
+        margin: 0 auto;
     }
 
     input {
@@ -866,28 +858,29 @@ hr {
     }
 
     .bmi-btn {
-        margin-left: 0;
         margin-bottom: 1rem;
     }
 
-    /* ................... meet the team .................... */
+    /* ................... meet the team styles .................... */
 
     .meet-p {
         width: 280px;
     }
 
     .team-members {
+        margin: 0 auto;
         grid-template-columns: 1fr;
         justify-items: center;
+        width: 400px;
+        align-items: center;
+        padding: 1rem 0;
     }
 
     .member {
-        width: 300px;
+        width: 350px;
     }
 
-
-
-    /*.................. footer .................. */
+    /*.................. footer styles .................. */
 
     .footer {
         grid-template-columns: 1fr;
@@ -899,7 +892,6 @@ hr {
     .fitness-content {
         width: 300px;
         text-align: left;
-
     }
 
     .fitness-content p {
@@ -911,7 +903,6 @@ hr {
         justify-content: flex-start;
         align-items: flex-start;
         width: 300px;
-        /* align-items: flex-start; */
     }
 
     .horizontal-end {
