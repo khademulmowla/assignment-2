@@ -351,6 +351,10 @@ body {
     text-align: center;
 }
 
+.content-info h1 {
+    text-align: start;
+}
+
 .content-img {
     width: 500px;
     display: grid;
@@ -407,9 +411,6 @@ body {
     }
 }
 
-h1 {
-    text-align: center;
-}
 
 
 /* .................................. BMI Calculator styles .................................  */
@@ -902,6 +903,10 @@ hr {
     .suppliment-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .btn-suppliment {
+        margin-left: 0;
     }
 
     /* .................... bmi ...................... */
